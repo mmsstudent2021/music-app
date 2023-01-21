@@ -33,6 +33,7 @@ const Detail = () => {
       <a target={"_blank"} href={url} className="text-white bg-blue-700 px-10 py-3 rounded shadow-sm">
         download - {id}
       </a>
+      <h1>We love Min Thiha</h1>
     </div>
   );
 };
