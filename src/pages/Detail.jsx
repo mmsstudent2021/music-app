@@ -20,7 +20,7 @@ const Detail = () => {
         },
       }
     );
-    console.log(data);
+    console.log("url => ",data);
     location.href=`${data?.result?.download_url}`
 
     // setUrl(data?.result?.download_url);
