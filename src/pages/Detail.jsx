@@ -20,31 +20,19 @@ const Detail = () => {
         },
       }
     );
-    console.log("url => ",data);
-    location.href=`${data?.result?.download_url}`
-
-    // setUrl(data?.result?.download_url);
+    console.log(data);
+    setUrl(data?.result?.download_url);
   };
 
-  // useEffect(() => {
-  //   getUrl();
-  // }, []);
+  useEffect(() => {
+    getUrl();
+  }, []);
 
   return (
     <div>
-      <a
-        target={"_blank"}
-        href={url}
-        className="text-white bg-blue-700 px-10 py-3 rounded shadow-sm"
-      >
+      <a target={"_blank"} href={url} className="text-white bg-blue-700 px-10 py-3 rounded shadow-sm">
         download - {id}
       </a>
-      <button
-        onClick={() => getUrl()}
-        className="text-white bg-blue-700 px-10 py-3 rounded shadow-sm"
-      >
-        download - {id}
-      </button>
       <h1>We love Min Thiha</h1>
     </div>
   );
