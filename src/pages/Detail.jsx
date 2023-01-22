@@ -21,7 +21,7 @@ const Detail = () => {
       }
     );
     console.log(data);
-    setUrl(data?.result?.download_url);
+    // setUrl(data?.result?.download_url);
   };
 
   useEffect(() => {
